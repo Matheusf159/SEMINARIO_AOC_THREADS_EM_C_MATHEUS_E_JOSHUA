@@ -1,0 +1,38 @@
+EXEMPLOS DO USO DE THREADS
+
+PROCESSADORES DE TEXTOS:
+
+Um bom processador de texto usaria duas threads, uma dekas seria
+responsável por interagir com o usuário, e a outra thread seria responsável
+por corrigir o texto, realizando isso em segundo plano. Assim enquanto o
+usuário digitaria seu texto o processador de textos iria processando o
+texto, enquanto após isso o segundo thread seria responsável por corrigir
+os textos que iriam sendo digitados pelo usuário caso estivessem errados
+
+
+CRIAÇÃO DE JOGOS:
+
+Um jogo poderia ser modelado com linhas de execução diferentes, sendo
+uma para desempenho de imagem e outra para áudio. Neste, caso, há um thread
+para tratar rotinas de desenho e outro thread para tratar audio. No ponto
+de vista do usuário, a imagem é desenhada ao mesmo tempo em que o áudio
+é emitido pelos auto-falantes. Porém, para sistemas com uma única CPU, cada
+linha de execução é processada por vez.
+
+BROWSER
+
+É um exemplo de uma aplicação multithread, onde várias coisas acontecem ao
+mesmo tempo, por exemplo: scroll, download de um applet, download de uma
+imagem, toar uma animação e um som, imprimir uma página em background,
+download de uma nova págia, olhar 3 applets de uma ordenação trabalhando.
+
+
+
+
+
+
+REFERêNCIAS:
+
+https://www.devmedia.com.br/programacao-com-threads-parte-i/6152
+https://pt.wikipedia.org/wiki/Thread_(computa%C3%A7%C3%A3o)#Exemplos_de_Usos
+http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/threads/threads1.html
